@@ -1,0 +1,25 @@
+# Environment
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+*.egg-info/
+
+# Database (local only)
+*.db
+*.sqlite3
+
+# OS
+.DS_Store
+
+# Report files (not needed for bot)
+*.pdf
+*.docx
+data/
+примерОтчет/
+ОТЧЁТ_FoodBot.md
+Ғалымбек*
