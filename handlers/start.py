@@ -38,12 +38,10 @@ async def about(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
-        "📞 *Бізбен байланысыңыз*\n\n"
-        "Телефон: +7 (777) 123-45-67\n"
-        "Email: support@foodbot.kz\n"
-        "Telegram: @foodbot_support\n\n"
-        "Біз әрқашан көмектесуге дайынбыз! 💬",
-        parse_mode="Markdown",
+        "📞 Бізбен байланысыңыз\n\n"
+        "Телефон: +7 777 123 45 67\n"
+        "Email: info@foodbot.kz\n\n"
+        "Біз әрқашан көмектесуге дайынбыз!",
         reply_markup=main_menu_keyboard(),
     )
 
