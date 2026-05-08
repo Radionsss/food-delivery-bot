@@ -3,13 +3,15 @@ import logging
 from telegram import BotCommand
 from telegram.ext import ApplicationBuilder
 
+from telegram.ext import MessageHandler, filters
+
 from config import BOT_TOKEN
 from database.db import init_db
-from handlers.start import get_start_handlers
-from handlers.menu import get_menu_handlers
-from handlers.cart import get_cart_handlers
-from handlers.order import get_order_handlers
-from handlers.profile import get_profile_handlers
+from handlers.start import get_start_handlers, start, about, contact
+from handlers.menu import get_menu_handlers, show_menu
+from handlers.cart import get_cart_handlers, show_cart
+from handlers.order import get_order_handlers, show_orders
+from handlers.profile import get_profile_handlers, show_profile
 
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
@@ -43,7 +45,19 @@ def main():
         .build()
     )
 
-    # ConversationHandler'ы должны регистрироваться первыми
+    # Кнопки главного меню — высший приоритет (group=-1)
+    # Работают всегда, даже внутри ConversationHandler
+    for text, fn in [
+        (r"Мәзір", show_menu),
+        (r"Себет", show_cart),
+        (r"тапсырыстарым", show_orders),
+        (r"Профиль", show_profile),
+        (r"Байланыс", contact),
+        (r"Біз туралы", about),
+    ]:
+        app.add_handler(MessageHandler(filters.Regex(text), fn), group=-1)
+
+    # ConversationHandler'ы и остальные обработчики
     for handler in get_order_handlers():
         app.add_handler(handler)
 
