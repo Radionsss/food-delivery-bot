@@ -162,7 +162,7 @@ async def go_to_main_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 def get_menu_handlers():
     return [
-        MessageHandler(filters.Text(["🍽 Мәзір"]), show_menu),
+        MessageHandler(filters.Regex(r"Мәзір"), show_menu),
         CallbackQueryHandler(show_menu, pattern="^menu$"),
         CallbackQueryHandler(show_category, pattern="^cat_"),
         CallbackQueryHandler(show_item, pattern="^item_"),

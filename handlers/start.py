@@ -51,6 +51,6 @@ async def contact(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def get_start_handlers():
     return [
         CommandHandler("start", start),
-        MessageHandler(filters.Text(["ℹ️ Біз туралы"]), about),
-        MessageHandler(filters.Text(["📞 Байланыс"]), contact),
+        MessageHandler(filters.Regex(r"Біз туралы"), about),
+        MessageHandler(filters.Regex(r"Байланыс"), contact),
     ]

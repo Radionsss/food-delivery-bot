@@ -67,7 +67,7 @@ async def _refresh_cart(query, telegram_id: int):
 
 def get_cart_handlers():
     return [
-        MessageHandler(filters.Text(["🛒 Себет"]), show_cart),
+        MessageHandler(filters.Regex(r"Себет"), show_cart),
         CallbackQueryHandler(show_cart, pattern="^cart$"),
         CallbackQueryHandler(cart_increase, pattern="^cart_inc_"),
         CallbackQueryHandler(cart_decrease, pattern="^cart_dec_"),

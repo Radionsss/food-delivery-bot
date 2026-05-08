@@ -107,6 +107,6 @@ def get_profile_handler():
 
 def get_profile_handlers():
     return [
-        MessageHandler(filters.Text(["👤 Профиль"]), show_profile),
+        MessageHandler(filters.Regex(r"Профиль"), show_profile),
         get_profile_handler(),
     ]

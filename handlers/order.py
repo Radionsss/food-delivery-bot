@@ -331,7 +331,7 @@ def get_order_conversation_handler():
 def get_order_handlers():
     return [
         get_order_conversation_handler(),
-        MessageHandler(filters.Text(["📋 Менің тапсырыстарым"]), show_orders),
+        MessageHandler(filters.Regex(r"тапсырыстарым"), show_orders),
         CallbackQueryHandler(show_order_detail, pattern="^order_"),
         CallbackQueryHandler(simulate_payment_handler, pattern="^sim_pay_"),
         CallbackQueryHandler(cancel_payment, pattern="^cancel_pay_"),
