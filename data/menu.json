@@ -1,0 +1,53 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "🍕 Пицца",
+      "items": [
+        {"id": 101, "name": "Маргарита", "description": "Қызанақ соусы, моцарелла, базилик", "price": 2500, "weight": "400г", "photo": "data/images/margherita.jpg"},
+        {"id": 102, "name": "Пепперони", "description": "Қызанақ соусы, моцарелла, пепперони", "price": 2900, "weight": "420г", "photo": "data/images/pepperoni.jpg"},
+        {"id": 103, "name": "Төрт ірімшік", "description": "Моцарелла, гауда, пармезан, дор блю", "price": 3200, "weight": "410г", "photo": "data/images/four_cheese.jpg"},
+        {"id": 104, "name": "Гавайи", "description": "Қызанақ соусы, моцарелла, тауық, ананас", "price": 2700, "weight": "430г", "photo": "data/images/hawaii.jpg"}
+      ]
+    },
+    {
+      "id": 2,
+      "name": "🍔 Бургерлер",
+      "items": [
+        {"id": 201, "name": "Классик Бургер", "description": "Сиыр еті котлеті, қызанақ, салат, соус", "price": 1800, "weight": "250г", "photo": "data/images/classic_burger.jpg"},
+        {"id": 202, "name": "Екі қабатты Бургер", "description": "Екі котлет, ірімшік, бекон, BBQ соусы", "price": 2300, "weight": "350г", "photo": "data/images/double_burger.jpg"},
+        {"id": 203, "name": "Тауық Бургер", "description": "Тауық котлеті, хрусталды салат, соус", "price": 1600, "weight": "230г", "photo": "data/images/chicken_burger.jpg"},
+        {"id": 204, "name": "Вегги Бургер", "description": "Көкөніс котлеті, авокадо, салат", "price": 1700, "weight": "240г", "photo": "data/images/veggie_burger.jpg"}
+      ]
+    },
+    {
+      "id": 3,
+      "name": "🍜 Роллдар мен суши",
+      "items": [
+        {"id": 301, "name": "Филадельфия", "description": "Лосось, кілегей ірімшік, қияр", "price": 3800, "weight": "240г", "photo": "data/images/philadelphia.jpg"},
+        {"id": 302, "name": "Калифорния", "description": "Шаян, авокадо, қияр, тобико уылдырығы", "price": 3300, "weight": "220г", "photo": "data/images/california.jpg"},
+        {"id": 303, "name": "Айдаһар", "description": "Жылан балық, авокадо, қияр, унаги соусы", "price": 4000, "weight": "250г", "photo": "data/images/dragon.jpg"},
+        {"id": 304, "name": "Стандарт жинақ", "description": "32 ролл: Филадельфия, Калифорния, Пісірілген", "price": 7100, "weight": "960г", "photo": "data/images/set.jpg"}
+      ]
+    },
+    {
+      "id": 4,
+      "name": "🥗 Салаттар",
+      "items": [
+        {"id": 401, "name": "Тауықты Цезарь", "description": "Тауық, романо, пармезан, гренка, Цезарь соусы", "price": 1900, "weight": "300г", "photo": "data/images/caesar.jpg"},
+        {"id": 402, "name": "Грек салаты", "description": "Жас көкөністер, зәйтүн, фета, зәйтүн майы", "price": 1600, "weight": "280г", "photo": "data/images/greek.jpg"},
+        {"id": 403, "name": "Оливье", "description": "Шұжық, картоп, жұмыртқа, бұршақ, майонез", "price": 1400, "weight": "250г", "photo": "data/images/olivier.jpg"}
+      ]
+    },
+    {
+      "id": 5,
+      "name": "🥤 Сусындар",
+      "items": [
+        {"id": 501, "name": "Кола 0.5л", "description": "Coca-Cola", "price": 700, "weight": "500мл", "photo": "data/images/cola.jpg"},
+        {"id": 502, "name": "Апельсин шырыны", "description": "Жаңа сығылған апельсин шырыны", "price": 1000, "weight": "400мл", "photo": "data/images/juice.jpg"},
+        {"id": 503, "name": "Су 0.5л", "description": "Газсыз минерал су", "price": 450, "weight": "500мл", "photo": "data/images/water.jpg"},
+        {"id": 504, "name": "Кофе Латте", "description": "Сүтті қос эспрессо", "price": 1200, "weight": "350мл", "photo": "data/images/latte.jpg"}
+      ]
+    }
+  ]
+}

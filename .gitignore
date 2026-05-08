@@ -19,7 +19,8 @@ venv/
 # Report files (not needed for bot)
 *.pdf
 *.docx
-data/
+data/report_images/
+data/images/
 примерОтчет/
 ОТЧЁТ_FoodBot.md
 Ғалымбек*
