@@ -323,6 +323,7 @@ def get_order_conversation_handler():
         fallbacks=[
             CommandHandler("cancel", cancel_command),
             CallbackQueryHandler(cancel_order, pattern="^cancel_order$"),
+            MessageHandler(filters.Regex(r"Мәзір|Себет|тапсырыстарым|Профиль|Байланыс|Біз туралы"), cancel_command),
         ],
         allow_reentry=True,
     )

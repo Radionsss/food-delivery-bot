@@ -100,7 +100,10 @@ def get_profile_handler():
                 MessageHandler(filters.TEXT & ~filters.COMMAND, edit_address_save),
             ],
         },
-        fallbacks=[CommandHandler("cancel", cancel_edit)],
+        fallbacks=[
+            CommandHandler("cancel", cancel_edit),
+            MessageHandler(filters.Regex(r"Мәзір|Себет|тапсырыстарым|Профиль|Байланыс|Біз туралы"), cancel_edit),
+        ],
         allow_reentry=True,
     )
 
